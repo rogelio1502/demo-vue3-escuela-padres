@@ -1,8 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue'
-
-</script>
-
 <template>
     <BaseModal id="courseInModal" 
     :title="title" :info="info" 
@@ -19,6 +14,7 @@
 
 
 <script>
+import BaseModal from '../BaseModal.vue'
 import userService from '../../../services/user.service';
 import Swal from 'sweetalert2';
 export default {

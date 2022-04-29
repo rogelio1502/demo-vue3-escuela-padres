@@ -1,9 +1,3 @@
-
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-    
-</script>
-
 <template>
     
     <BaseModal 
@@ -43,6 +37,7 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
 import CourseService from '../../../services/course.service';
 import SectionService from '../../../services/section.service';
 import draggable from 'vuedraggable'

@@ -1,8 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-    // import Ok from './Ok.vue';
-</script>
-
 <template>
     <BaseModal id="editCourseModal" 
     :title="title" :saveMethod="save" 
@@ -58,6 +53,7 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
 import $ from  'jquery';
 import api from '../../../services/api'
 import CourseService from '../../../services/course.service'

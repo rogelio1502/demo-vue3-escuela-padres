@@ -1,8 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-    // import Ok from './Ok.vue';
-</script>
-
 <template>
     <BaseModal id="removeSectionModal" 
     :title="title"  :saveMethod="save" 
@@ -18,6 +13,7 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
 import sectionService from '../../../services/section.service';
 import CourseService from '../../../services/course.service'
 import Swal from 'sweetalert2'

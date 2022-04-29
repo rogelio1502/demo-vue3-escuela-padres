@@ -1,9 +1,3 @@
-<script setup>
-import userService from '../../services/user.service'
-import CourseCard from './CourseCard.vue';
-
-</script>
-
 <template>
     <div class="mt-3">
         <div>
@@ -59,7 +53,8 @@ import CourseCard from './CourseCard.vue';
 </template>
 
 <script>
-
+import userService from '../../services/user.service'
+import CourseCard from './CourseCard.vue';
 export default {
   components: { CourseCard },
     data(){

@@ -1,8 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-
-</script>
-
 <template>
     <BaseModal id="editSectionModal" 
     :title="title" :saveMethod="save" 
@@ -52,6 +47,7 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
 import SectionService from '../../../services/section.service';
 import Swal from 'sweetalert2'
 import $ from  'jquery';

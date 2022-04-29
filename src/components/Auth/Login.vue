@@ -1,6 +1,6 @@
 <template>
    <div class="wrapper">
-        <div class="logo"> <img src="Recursos/LogoSolo.png" alt=""> </div>
+        <!-- <div class="logo"> <img src="Recursos/LogoSolo.png" alt=""> </div> -->
         <div class="text-center mt-4 name"> Escuela para Padres </div>
         <Form @submit="handleLogin" :validation-schema="schema">
           <div class="p-3 mt-3">

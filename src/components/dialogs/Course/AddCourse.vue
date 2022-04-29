@@ -1,7 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-</script>
-
 <template>
     <BaseModal id="addCourseModal" 
     :title="title" :saveMethod="save" 
@@ -10,10 +6,10 @@
     :prop_disabled="disabled">
         <div class="form-group">
             <label for="course_name" >
-                Nombre del Curso
+                Nombre del Curso 
             </label>
             <input v-model="course_name" 
-            type="text" name="course_name" 
+            type="text" name="course_name"
             id="course_name_ipt" class="form-control" required>
             <label for="course_desc" >
                 Descripción
@@ -63,24 +59,24 @@ import api from '../../../services/api'
 import Swal from 'sweetalert2'
 
 
-
 export default {
     emits: ['making_action'],
     props : {
         reload : Function,
     },
+    
     data() {
         return {
             title : "Añadir curso",
             cancel_save:true,
             info:false,
             form_modal:true,
-            course_name: "",
             course_desc: "",
             inputErrors : [],
             disabled : false,
             file : null,
             fileImg : "",
+            course_name : ""
         }
     },
     methods: {

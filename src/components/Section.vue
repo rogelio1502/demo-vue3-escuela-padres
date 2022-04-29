@@ -1,8 +1,7 @@
 <script setup>
-import courseService from '../services/course.service';
 import YouTube from 'vue3-youtube'
-</script>
 
+</script>
 <template>  
             
             <div v-if="!loaded">
@@ -61,6 +60,7 @@ import YouTube from 'vue3-youtube'
 </template>
 
 <script>
+    import courseService from '../services/course.service';
     import Swal from 'sweetalert2'
     import userService from '../services/user.service'
     export default {

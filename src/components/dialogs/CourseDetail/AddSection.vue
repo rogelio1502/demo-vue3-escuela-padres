@@ -1,7 +1,3 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-</script>
-
 <template>
     <BaseModal 
     id="addSectionModal" 
@@ -58,10 +54,9 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
 import SectionService from '../../../services/section.service';
-
 import $ from  'jquery/dist/jquery';
-  
 import Swal from 'sweetalert2';
 
 export default {

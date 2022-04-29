@@ -8,7 +8,7 @@ import Users from "./components/Admin/Users.vue";
 import Courses from "./components/Courses.vue";
 import CourseDetail from "./components/CourseDetail.vue";
 import Section from './components/Section.vue';
-import AdminLogin from "./components/Admin/Login.vue";
+import AdminLogin from "./components/Admin/AdminLogin.vue";
 // lazy-loaded
 // const Profile = () => import ("./components/Profile.vue")
 // const BoardAdmin = () => import ("./components/BoardAdmin.vue")

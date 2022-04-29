@@ -1,7 +1,4 @@
-<script setup>
-    import BaseModal from '../BaseModal.vue';
-    // import Ok from './Ok.vue';
-</script>
+
 
 <template>
     <BaseModal id="removeCourseModal" 
@@ -25,6 +22,8 @@
 </template>
 
 <script>
+import BaseModal from '../BaseModal.vue';
+
 import CourseService from '../../../services/course.service';
 import Swal from 'sweetalert2';
 
@@ -62,7 +61,7 @@ export default {
                     }).then(
                         (response)=>{
                             console.log(response);
-                            this.reload();
+                        
                             if(this.redirect){
                                 this.toCourses();
                             }else{

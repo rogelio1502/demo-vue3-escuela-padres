@@ -1,15 +1,3 @@
-<script setup>
-    import Remove from './dialogs/Course/Remove.vue';
-    import AddSection from './dialogs/CourseDetail/AddSection.vue';
-    import EditSectionOrder from './dialogs/CourseDetail/EditSectionOrder.vue';
-    import EditSection from './dialogs/CourseDetail/EditSection.vue'
-    import RemoveSection from './dialogs/CourseDetail/RemoveSection.vue'
-    import CourseIn from './dialogs/Course/CourseIn.vue';
-    import Loading from "./Utils/Loading.vue"
-    import EditCourse from "./dialogs/Course/EditCourse.vue"
-
-    
-</script>
 <template>
     <Loading v-if="some_action">
 
@@ -206,6 +194,14 @@
 import CourseService from "../services/course.service"
 import userService from '../services/user.service';
 import courseService from '../services/course.service';
+import Remove from './dialogs/Course/Remove.vue';
+import AddSection from './dialogs/CourseDetail/AddSection.vue';
+import EditSectionOrder from './dialogs/CourseDetail/EditSectionOrder.vue';
+import EditSection from './dialogs/CourseDetail/EditSection.vue'
+import RemoveSection from './dialogs/CourseDetail/RemoveSection.vue'
+import CourseIn from './dialogs/Course/CourseIn.vue';
+import Loading from "./Utils/Loading.vue"
+import EditCourse from "./dialogs/Course/EditCourse.vue"
 
 export default {
     components : {

@@ -12,6 +12,10 @@ import Footer from './components/Footer/Footer.vue'
 
 
 <script>
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column';
+import Dialog from 'primevue/dialog/Dialog.vue'
+import Button from 'primevue/button'
 import EventBus from "./common/EventBus";
 export default {
   

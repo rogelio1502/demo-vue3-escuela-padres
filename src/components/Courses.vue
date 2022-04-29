@@ -1,10 +1,4 @@
 
-<script setup>
-    import AddCourse from "./dialogs/Course/AddCourse.vue"
-    import Remove from "./dialogs/Course/Remove.vue"
-    import CourseIn from "./dialogs/Course/CourseIn.vue"
-    import Loading from "./Utils/Loading.vue"
-</script>
 
 
 <template>
@@ -101,6 +95,10 @@
 
 import CourseService from "../services/course.service"
 import userService from '../services/user.service'
+import AddCourse from "./dialogs/Course/AddCourse.vue"
+import Remove from "./dialogs/Course/Remove.vue"
+import CourseIn from "./dialogs/Course/CourseIn.vue"
+import Loading from "./Utils/Loading.vue"
 
 export default {
     components : {
@@ -113,6 +111,7 @@ export default {
             errors: [],
             loaded : false,
             course_remove_id : 0,
+            course_remove_name: "",
             course_remove_title : "",
             redirect : false,
             courses_in : [],
